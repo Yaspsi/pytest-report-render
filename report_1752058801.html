@@ -26,9 +26,14 @@
         gtag('js', new Date());
         gtag('config', 'G-FVWC4GKEYS', {
           'allureVersion': 'dev',
-          'reportUuid': 'a1c03489-1427-4cca-b4ba-4f73dfd9deef',
+          'reportUuid': '4c2171f3-6724-45de-91a8-2b027dc269ab',
           'single_file': false
         });
     </script>
 </body>
 </html>
+<script>
+  fetch('commit_info.html')
+    .then(resp => resp.text())
+    .then(html => document.body.insertAdjacentHTML('beforeend', html));
+</script>
